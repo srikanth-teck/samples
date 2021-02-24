@@ -16,9 +16,9 @@ This sample architecture leverages concepts from the [Example Parameterized Depl
 
 Use the following buttons to deploy the architecture using the Azure portal or to visualize with [armviz.io](https://armviz.io).
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fmaster%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
-[![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fmaster%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
-[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fmaster%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fhallihan-hanva-sample-il7-tryit%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
+[![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fhallihan-hanva-sample-il7-tryit%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fhallihan-hanva-sample-il7-tryit%2Fsolutions%2Fha-nva%2Flayer-7-ingress%2Fazuredeploy.json)
 
 #### Azure CLI
 
@@ -32,7 +32,7 @@ Run the following command to deploy the Layer 7 Ingress example architecture.
 
 ```bash
 az deployment group create --resource-group ha-nva-l7i \
-    --template-uri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/layer-7-ingress/azuredeploy.json
+    --template-uri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-il7-tryit/solutions/ha-nva/layer-7-ingress/azuredeploy.json
 ```
 
 #### PowerShell
@@ -47,7 +47,7 @@ Run the following command to deploy the Layer 7 Ingress example architecture.
 
 ```powershell
 New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
-    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/layer-7-ingress/azuredeploy.json
+    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-il7-tryit/solutions/ha-nva/layer-7-ingress/azuredeploy.json
 ```
 
 ### Solution deployment parameters
