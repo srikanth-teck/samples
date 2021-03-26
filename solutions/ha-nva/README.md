@@ -28,8 +28,8 @@ These sample architectures leverage concepts from the [Example Parameterized Dep
 
 Use the following buttons to deploy the architecture using the Azure portal.
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fmaster%2Fsolutions%2Fha-nva%2Fazuredeploy.json)
-[![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fmaster%2Fsolutions%2Fha-nva%2Fazuredeploy.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fhallihan-hanva-sample-tryit%2Fsolutions%2Fha-nva%2Fazuredeploy.json)
+[![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmspnp%2Fsamples%2Fhallihan-hanva-sample-tryit%2Fsolutions%2Fha-nva%2Fazuredeploy.json)
 
 To deploy the **ingress-only** configuration, set the values of the following parameters:
 
@@ -60,7 +60,7 @@ Run one of the following commands to deploy the example architecture.
 
 ```azurecli-interactive
 az deployment group create --resource-group ha-nva-l7 \
-    --template-uri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json \
+    --template-uri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json \
     --parameters deployIngressAppGatewayWebLoadBalancer=true deployEgressLoadBalancerNva=false
 ```
 
@@ -68,7 +68,7 @@ az deployment group create --resource-group ha-nva-l7 \
 
 ```azurecli-interactive
 az deployment group create --resource-group ha-nva-l7 \
-    --template-uri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json \
+    --template-uri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json \
     --parameters deployIngressAppGatewayWebLoadBalancer=false deployEgressLoadBalancerNva=true
 ```
 
@@ -76,7 +76,7 @@ az deployment group create --resource-group ha-nva-l7 \
 
 ```azurecli-interactive
 az deployment group create --resource-group ha-nva-l7 \
-    --template-uri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json
+    --template-uri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json
 ```
 
 ### PowerShell
@@ -93,7 +93,7 @@ Run one of the following commands to deploy the example architecture.
 
 ```azurepowershell-interactive
 New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
-    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json `
+    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json `
     -deployIngressAppGatewayWebLoadBalancer $true -deployEgressLoadBalancerNva $false
 ```
 
@@ -101,7 +101,7 @@ New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
 
 ```azurepowershell-interactive
 New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
-    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json
+    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json
     -deployIngressAppGatewayWebLoadBalancer $false -deployEgressLoadBalancerNva $true
 ```
 
@@ -109,7 +109,7 @@ New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
 
 ```azurepowershell-interactive
 New-AzResourceGroupDeployment -ResourceGroupName ha-nva-l7i `
-    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/master/solutions/ha-nva/azuredeploy.json
+    -TemplateUri https://raw.githubusercontent.com/mspnp/samples/hallihan-hanva-sample-tryit/solutions/ha-nva/azuredeploy.json
 ```
 
 ### Redeploying the architecture to the same Resource Group
